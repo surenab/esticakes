@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+ <div id="content-block">
+        <!-- HEADER -->
+        {% include "header.html" %}
+		
+     	<!-- Our-Products-Page-2 -->
+        <div class="bgImages opacityLayer" style="background-image: url({% static "img/products-bg.jpg" %}); background-position: 50% 50%; background-size: cover">
+            <div class="container">
+                <div class="cell-view tableCellVH2">
+                    <div class="emptySpace100 emptySpace-md50"></div>
+                    <div class="emptySpace115 emptySpace-md50"></div>
+                    <div class="row">
+                        <!-- Our-Product-Title -->
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <div class="big titleShortcode">
+                                <h3 class="h3">Sweet And Delicious</h3>
+                                <h2 class="h1">Our Products</h2>
+                                <div class="emptySpace5"></div>
+                                <p>Only Best!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="emptySpace50"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bgWhite">
+            <div class="container">
+                <div class="emptySpace-xs60 emptySpace110"></div>
+                <div class="row">
+                    <!-- Raspberry-Cake-Title -->
+                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                        <div class="big subTitleShortcode">
+                            <h2 class="h2">{{ccake.name}}</h2>
+                            <div class="emptySpace20"></div>
+                            <p>{{ccake.description}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="emptySpace25"></div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="swiper-container" data-loop="1" style="height: 350px">
+                            <div class="swiper-wrapper">
+                                <!-- Slide-1 -->
+                                <div class="swiper-slide" style="background: url({{ccake.image1.url}});  background-position: 50% 50%; background-size: 20% 100%;"></div>
+                                <!-- Slide-2 -->
+                                {% if ccake.image2 %}
+                                    <div class="swiper-slide" style="background: url({{ccake.image2.url}});  background-position: 50% 50%; background-size: 20% 100%;"></div>
+                                {% endif %}
+                                {% if ccake.image3 %}
+                                    <div class="swiper-slide" style="background: url({{ccake.image3.url}});  background-position: 50% 50%; background-size: 20% 100%;"></div>
+                                {% endif %}
+                                {% if ccake.image4 %}
+                                    <div class="swiper-slide" style="background: url({{ccake.image4.url}});  background-position: 50% 50%; background-size: 20% 100%;"></div>
+                                {% endif %}
+                            </div>
+                            <div class="swiper-pagination swiper-pagination-white"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="emptySpace20"></div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="normall">
+                            <p>{{ccake.description}}</p>
+                            <div class="emptySpace25"></div>
+                            <p>{{ccake.long_description}}</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="emptySpace35 emptySpace-xs25"></div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="normall ingShortcode">
+                            <h6 class="h6">Ingredients:</h6>
+                            <p>{{ccake.ingredients}}.</p>
+                        </div>
+                        <a href="#" class="sweetPrice2 productPrice spin spin2">€{{ccake.price}}</a>
+                    </div>
+                </div>
+                <div class="emptySpace10"></div>
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <div class="share">Share:</div>
+                        <div class="socialWrapper2">
+                            <a class="social2 shareBg spin spin2" href="#">
+								<i class="fa fa-facebook shareF2"></i>
+							</a>
+                            <a class="social2 shareBg spin spin2" href="#">
+								<i class="fa fa-twitter shareT2"></i>
+							</a> 
+                            <a class="social2 shareBg spin spin2" href="#">
+                            	<i class="fa fa-google-plus shareG2"></i>
+                            </a>
+                            <a class="social2 shareBg spin spin2" href="#">
+                            	<i class="fa fa-pinterest-p sharePi2"></i>
+                            </a>
+                            <a class="social2 shareBg spin spin2" href="#">
+								<i class="fa fa-linkedin shareIn2"></i>
+							</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="emptySpace-xs60 emptySpace110"></div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3">
+                        <div class="titleShortcode2">
+                            <h2 class="h2">Related Products</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="emptySpace70 emptySpace-xs30"></div>
+                <!-- Swiper -->
+                <div class="swiper-container" data-breakpoints="1" data-xs-slides="1" data-sm-slides="2" data-md-slides="3" data-slides-per-view="4" data-space="30">
+                    <!-- Swiper-Arrow -->
+                    <div class="arrowWrapper"> 
+                        <div class="swiper-button-prev hidden-xs hidden-sm spin spin2">
+                            <img class="arrowShortcode" src="img/left-hover-arrow.png" alt="">
+                        </div>
+                        <div class="swiper-button-next hidden-xs hidden-sm spin spin2">
+                            <img class="arrowShortcode" src="img/right-hover-arrow.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-wrapper">
+                        {% for cake in cakes %}
+                            <div class="swiper-slide">
+                                <div class="normall contentShortcode">
+                                    <a href="{% url "website:cake" pk=cake.id %}"><h4 class="h4">{{cake.name}}</h4></a>
+                                    <div class="emptySpace-xs15 emptySpace25"></div>
+                                    <a class="imgLayer" href="{% url "website:cake" pk=cake.id %}"><img class="imgShortcode" src="{{cake.image1.url}}" alt="" style="height:270px;"><span></span><span></span></a>
+                                    <div class="emptySpace5"></div>
+                                    <p>{{cake.description}}</p>
+                                    <div class="emptySpace-xs15 emptySpace20"></div>
+                                    <div class="sweetPrice">€{{cake.price}}</div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    <div class="swiper-pagination relative-pagination swiper-pagination-black visible-xs visible-sm"></div>
+                </div> 
+                <div class="emptySpace125 emptySpace-xs60"></div>
+            </div>
+        </div>
+        
+        <div class="footerSeparator"></div>
+        <div class="emptySpace50 emptySpace-xs30"></div>
+       
+
+{% endblock %}
+

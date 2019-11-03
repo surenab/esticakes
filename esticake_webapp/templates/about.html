@@ -1,0 +1,404 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div id="content-block">
+        <!-- HEADER -->
+        {% include "header.html" %}
+        <!-- About-Us-Page -->
+        <div class="bgImages opacityLayer" style="background-image: url({% static "img/about-us-bg.jpg" %}); background-position: 50% 50%; background-size: cover">
+           <div class="container">
+                <div class="cell-view tableCellVH2">
+                    <div class="emptySpace100 emptySpace-md50"></div>
+                    <div class="emptySpace115 emptySpace-md50"></div>
+                    <div class="row">
+                        <!-- About-Us-Title -->
+                        <div class="col-sm-8 col-sm-offset-2">
+                           <div class="big titleShortcode">
+                                <h3 class="h3">Read</h3>
+                                <h2 class="h1">About Us</h2>
+                                <div class="emptySpace5"></div>
+                                <p>Our team started work in Ireland already 2+ yeas and we manage to make our 99% customers to be happy what they get for our team.</p>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="emptySpace50"></div>
+                </div>   
+           </div>
+        </div>
+        <div class="bgWhite">
+            <div class="container">
+               <div class="emptySpace-xs60 emptySpace120"></div>
+                <div class="row">
+                    <!-- What-We-Do-Title -->
+                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                       <div class="big titleShortcode">
+                            <h5 class="h5">We Do What We Like And</h5>
+                            <div class="emptySpace20 emptySpace-xs5"></div>
+                            <h2 class="h2 bottomLine">We Like What We Do</h2>
+                            <div class="emptySpace30"></div>
+                            <p>Cakes are creative work and we like to do it. </p>
+                            <div class="emptySpace85 emptySpace-xs30"></div> 
+                       </div>
+                    </div>
+                </div>
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <!-- Slide-1 -->
+                            <div class="swiper-slide">
+								<img class="imgShortcode" src="img/about-us-slide.jpg" alt=""></div>
+                            <!-- Slide-2 -->
+                            <div class="swiper-slide" >
+								<img class="imgShortcode" src="img/about-us-slide2.jpg" alt="">
+                            </div>
+                            <!-- Slide-3 -->
+                            <div class="swiper-slide">
+								<img class="imgShortcode" src="img/about-us-slide3.jpg" alt="">
+                            </div>
+                        </div>
+                        <!-- Swiper-Pagination -->
+                        <div class="swiper-pagination swiper-pagination-white"></div>
+                    </div>
+                <div class="emptySpace15"></div>
+                <div class="normall contentShortcode2">
+                    <h4 class="h4">Our Story</h4>
+                    <div class="emptySpace15"></div>
+                    <p>We are The EstiCake Bakery. We believe in whole foods and produce everything we sell from scratch here in Cork.  We bake true artisan cakes without any unnecessary additives. We only use free range Irish eggs, real Irish butter and dairy products</p>
+                    <div class="emptySpace25"></div>
+                    <p>Since our humble beginnings in 2018 we have grown to employ 4 people. Our wholefoods background and the fact we produce everything ourselves means we have an extensive range of products catering specifically to people with specialist dietary requirements.  Nutrition and health are a big part of what we do and providing produce and advice to people on wheat-free, sugar-free, gluten-free, high-fibre, high-protein, vegetarian or vegan diets is our speciality.</p>
+                </div>
+                <div class="emptySpace-md20"></div>
+                <div class="normall">
+                    <h4 class="h4">We use only fresh products</h4>
+                    <div class="emptySpace15 emptySpace-xs15"></div>
+                    <p>Our all products irish and fresh.</p>
+                    <div class="emptySpace25 emptySpace-xs15"></div>
+                    <div class="subShortcode">
+                        <p>- always fresh ingredients;</p>
+                        <p>- only professionals in this job;</p>
+                        <p>- every customer satisfied.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="emptySpace-md60 emptySpace125"></div>
+        
+        <!-- Sweet-History -->
+        <div class="bgImages opacityLayer" style="background-image: url({% static "img/sweet-history-bg.jpg" %}); background-position: 50% 50%; background-size: cover">
+            <div class="container">
+                <div class="row">
+                   <div class="emptySpace-xs60 emptySpace120"></div>
+                    <!-- Sweet-History-Title -->
+                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                        <div class="big titleShortcode">
+                            <h5 class="h5">Moments Of</h5>
+                            <div class="emptySpace15"></div>
+                            <h2 class="h2 bottomLine">Our Sweet History</h2>
+                            <div class="emptySpace35"></div>
+                            <p>A news about relocation from Armenia to Ireland. And I decided to learn how to bake cake and design it.</p>
+                        </div> 
+                        <div class="emptySpace55 emptySpace-xs30"></div>  
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="yearShortcode2">
+                        <div class="yearWrapper">
+                            <h4 class="h4 historyYear">2018</h4>
+                        </div>
+                    </div>
+                    <!-- History-Block-1 -->
+                    <div class="timeLineShortcode2">
+                    <div class="flexWrapper2">
+                        <div class="imgTimeLineWrapper">
+                          <a class="imgLayer" href="blog2.html"><img class="imgShortcode2" src="{% static "img/history-time-line.jpg" %}" alt=""><span></span><span></span></a>
+                        </div>
+                        <div class="emptySpace-xs20"></div>
+                        <div class="normall contentTimeLineWrapper">
+                            <a href="blog2.html"><h4 class="h4">Starting my learning process</h4></a>
+                            <div class="emptySpace15"></div>
+                            <p>With hope that I will start my own bakery.</p>
+                        </div>    
+                    </div>
+                    <div class="monthWrapper">
+                        <h4 class="h4 historyMonth">01, January</h4>
+                    </div>
+               </div>
+                    <!-- History-Block-2 -->
+                    <div class="timeLineShortcode2">
+                    <div class="flexWrapper2">
+                        <div class="imgTimeLineWrapper rotateRight">
+                            <a class="imgLayer" href="blog2.html"><img class="imgShortcode2" src="{% static "img/history-time-line2.jpg" %}" alt=""><span></span><span></span></a>
+                        </div>
+                        <div class="emptySpace-xs20"></div>
+                        <div class="normall contentTimeLineWrapper rotateLeft">
+                            <a href="blog2.html"><h4 class="h4">I feel that I enjoy cake designing</h4></a>
+                            <div class="emptySpace15"></div>
+                            <p>I have done a lot of cake and I design a lot of beautiful cakes.</p>
+                        </div>   
+                    </div>
+                    <div class="monthWrapper">
+                        <h4 class="h4 historyMonth">11, March</h4>
+                    </div>
+               </div>
+                    <!-- History-Block-3 -->
+                    <div class="timeLineShortcode2">
+                    <div class="flexWrapper2">
+                        <div class="imgTimeLineWrapper">
+                            <a class="imgLayer" href="blog2.html"><img class="imgShortcode2" src="{% static "img/history-time-line3.jpg" %}" alt=""><span></span><span></span></a>
+                        </div>
+                        <div class="emptySpace-xs20"></div>
+                        <div class="normall contentTimeLineWrapper">
+                            <a href="blog2.html"><h4 class="h4">Doing my first cupcake and swwet in a cup</h4></a>
+                            <div class="emptySpace15"></div>
+                            <p>It was another world that I have discovered.</p>
+                        </div>   
+                    </div>
+                    <div class="monthWrapper">
+                        <h4 class="h4 historyMonth">08, April</h4>
+                    </div>
+               </div>
+                    <div class="yearShortcode2">
+                        <div class="yearWrapper">
+                            <h4 class="h4 historyYear">2019</h4>
+                        </div>    
+                    </div>
+                    <!-- History-Block-4 -->
+                    <div class="timeLineShortcode2">
+                        <div class="flexWrapper2">
+                            <div class="imgTimeLineWrapper rotateRight">
+                                <a class="imgLayer" href="blog2.html"><img class="imgShortcode2" src="{% static "img/history-time-line4.jpg" %}" alt=""> <span></span><span></span> </a>
+                            </div>
+                            <div class="emptySpace-xs20"></div>
+                            <div class="normall contentTimeLineWrapper rotateLeft">
+                                <a href="blog2.html"><h4 class="h4">My Sister in low join our team to make more enjoyable cakes</h4></a>
+                                <div class="emptySpace15"></div>
+                                <p>Our first worker!</p>
+                            </div>   
+                        </div>
+                        <div class="monthWrapper">
+                            <h4 class="h4 historyMonth">27, October</h4>
+                        </div>
+                    </div>
+                    <!-- History-Block-5 -->
+                    <div class="timeLineShortcode2">
+                        <div class="flexWrapper2">
+                            <div class="imgTimeLineWrapper">
+                                <a class="imgLayer" href="blog2.html"><img class="imgShortcode2" src="{% static "img/history-time-line5.jpg" %}" alt=""> <span></span><span></span></a>
+                            </div> 
+                            <div class="emptySpace-xs20"></div>
+                            <div class="normall contentTimeLineWrapper">
+                               <a href="blog-detail.html"><h4 class="h4">Website lunched!</h4></a>
+                               <div class="emptySpace15"></div>
+                               <p>We wait for this 2 years</p>
+                            </div> 
+                        </div>
+                        <div class="monthWrapper">
+                            <h4 class="h4 historyMonth">29, November</h4>
+                        </div>
+                    </div>
+                    <div class="yearShortcode2 loadedMore">
+                        <div class="historySeeMore">
+                            <div class="historyPlus spin spin2"><span></span><span></span></div>   
+                        </div>    
+                    </div>
+                <div class="emptySpace95 emptySpace-xs60"></div>
+                </div>
+            </div>
+        </div>
+        <div class="emptySpace120 emptySpace-md60"></div>
+        
+        <!-- Our-Professionals -->
+        <div class="bgWhite">
+            <div class="container">
+                <div class="row">
+                    <!-- Our-Professionals-title -->
+                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                        <div class="big titleShortcode">
+                            <h5 class="h5">Meet With</h5>
+                            <div class="emptySpace20 emptySpace-xs5"></div>
+                            <h2 class="h2 bottomLine">Our Professionals</h2>
+                            <div class="emptySpace30"></div>
+                            <p>We are really professional team. </p>
+                            <div class="emptySpace85 emptySpace-xs30"></div>  
+                        </div>   
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="swiper-container" data-breakpoints="1" data-xs-slides="1" data-sm-slides="2" data-md-slides="3" data-slides-per-view="3">
+                        <div class="swiper-wrapper">
+                            <!-- Slide-1 -->
+                            <div class="swiper-slide">
+                                <div class="normall contentShortcode3">
+                                    <img src="{% static "img/professional1.jpg" %}" alt="">
+                                    <div class="emptySpace10"></div>
+                                    <a href="contacts.html"><h4 class="h4">Yester Abrahamyan</h4></a>
+                                    <div class="emptySpace15"></div>
+                                    <p>Head Chef</p>
+                                    <div class="emptySpace10"></div>
+                                    <p>4+ year in cake bakery experience help me do very creative work in this area.</p>
+                                    <div class="socialWrapper">
+                                        <a class="social3 shareBg spin spin2" href="https://www.facebook.com/" target="_blank">
+                                        	<i class="fa fa-facebook shareF"></i>
+                                        </a>
+                                        <a class="social3 shareBg spin spin2" href="https://twitter.com/" target="_blank">
+											<i class="fa fa-twitter shareT"></i>
+                                        </a>   
+                                        <a class="social3 shareBg spin spin2" href="https://www.linkedin.com/" target="_blank">
+                                        	<i class="fa fa-linkedin shareIn"></i>
+                                        </a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide-2 -->
+                            <div class="swiper-slide">
+                                <div class="normall contentShortcode3">
+                                    <img src="{% static "img/professional2.jpg" %}" alt="">
+                                    <div class="emptySpace10"></div>
+                                    <a href="#"><h4 class="h4">Ani Abrahamyan</h4></a>
+                                    <div class="emptySpace15"></div>
+                                    <p>Professional Su Chef</p>
+                                    <div class="emptySpace10"></div>
+                                    <p>6+ year in cake bakery experience help me do very creative work in this area.</p>
+                                    <div class="socialWrapper">
+                                        <a class="social3 shareBg spin spin2" href="https://www.facebook.com/" target="_blank">
+                                        	<i class="fa fa-facebook shareF"></i>
+                                        </a>
+                                        <a class="social3 shareBg spin spin2" href="https://twitter.com/" target="_blank">
+											<i class="fa fa-twitter shareT"></i>
+                                        </a>   
+                                        <a class="social3 shareBg spin spin2" href="https://www.linkedin.com/" target="_blank">
+                                        	<i class="fa fa-linkedin shareIn"></i>
+                                        </a> 
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Slide-3 -->
+                            <div class="swiper-slide">
+                                <div class="normall contentShortcode3">
+                                    <img src="{% static "img/professional3.jpg" %}" alt="">
+                                    <div class="emptySpace10"></div>
+                                    <a href="#"><h4 class="h4">Suren Abrahamyan</h4></a>
+                                    <div class="emptySpace15"></div>
+                                    <p>Delivery Man</p>
+                                    <div class="emptySpace10"></div>
+                                    <p>I am Delivery Man.</p>
+                                    <div class="socialWrapper">
+                                        <a class="social3 shareBg spin spin2" href="https://www.facebook.com/" target="_blank">
+                                        	<i class="fa fa-facebook shareF"></i>
+                                        </a>
+                                        <a class="social3 shareBg spin spin2" href="https://twitter.com/" target="_blank">
+											<i class="fa fa-twitter shareT"></i>
+                                        </a>   
+                                        <a class="social3 shareBg spin spin2" href="https://www.linkedin.com/" target="_blank">
+                                        	<i class="fa fa-linkedin shareIn"></i>
+                                        </a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="swiper-pagination relative-pagination swiper-pagination-black"></div>
+                    <div class="emptySpace35"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Customers-Say -->
+        <div class="bgImages opacityLayer" style="background-image: url({% static "img/customers-bg.jpg" %}); background-position: 50% 50%; background-size: cover">
+                <div class="emptySpace120 emptySpace-xs60"></div>
+                <div class="container">
+                    <div class="row">
+                        <!-- Our-Customers-Title -->
+                        <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                            <div class="big titleShortcode">
+                                <h5 class="h5">What Does</h5>
+                                <div class="emptySpace20 emptySpace-xs5"></div>
+                                <h2 class="h2 bottomLine">Our Customers Say</h2>
+                                <div class="emptySpace30"></div>
+                                <div class="emptySpace85 emptySpace-xs30"></div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            <div class="swiper-container">
+				<!-- Swiper-Arrow -->
+                <div class="arrowWrapper"> 
+                    <div class="swiper-button-prev hidden-xs spin spin2">
+                        <img class="arrowShortcode" src="{% static "img/left-hover-arrow.png" %}" alt="">
+                    </div>
+                    <div class="swiper-button-next hidden-xs spin spin2">
+                        <img class="arrowShortcode" src="{% static "img/right-hover-arrow.png" %}" alt="">
+                    </div>
+                </div>
+                <div class="swiper-wrapper">
+                    <!-- Slide-1 -->
+                    <div class="swiper-slide">
+                       <div class="container">
+                           <div class="row">
+                               <div class="col-sm-6 col-sm-offset-3">
+                                    <div class="normall contentShortcode4">
+                                        <img class="customer" src="{% static "img/customer-image.jpg" %}" alt="">
+                                        <div class="emptySpace15"></div>
+                                        <h4 class="h4">“Outstanding quality & taste. Totally recommend!”</h4>
+                                        <div class="emptySpace15"></div>
+                                        <div class="emptySpace10"></div>
+                                        <div class="big">
+                                            <p>Carrie Gordon</p>
+                                        </div>
+                                        <div class="emptySpace15"></div>
+                                        <p>Magazine Fashion Photographer</p>  
+                                    </div>
+                               </div>
+                           </div>
+                       </div>
+                    </div>
+                    <!-- Slide-2 -->
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-3">
+                                    <div class="normall contentShortcode4">
+                                        <img class="customer" src="{% static "img/customer-image2.jpg" %}" alt="">
+                                        <div class="emptySpace15"></div>
+                                        <h4 class="h4">“Dream Cakes Bakery created an awesome monster cake for my son’s 1st birthday with 3 days notice”</h4>
+                                        <div class="emptySpace15"></div>
+                                        <div class="emptySpace10"></div>
+                                        <div class="big">
+                                            <p>Keith Smith</p>
+                                        </div>
+                                        <div class="emptySpace15"></div>
+                                        <p>Doctor</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Slide-3 -->
+                    <div class="swiper-slide">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6 col-sm-offset-3">
+                                    <div class="normall contentShortcode4">
+                                        <img class="customer" src="{% static "img/customer-image3.jpg" %}" alt="">
+                                        <div class="emptySpace15"></div>
+                                        <h4 class="h4">“Thank you so much! That cake was honestly breathtaking!”</h4>
+                                        <div class="emptySpace15"></div>
+                                        <div class="emptySpace10"></div>
+                                        <div class="big">
+                                            <p>Angela Swift</p>
+                                        </div>
+                                        <div class="emptySpace15"></div>
+                                        <p>Social Engineer</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination relative-pagination swiper-pagination-white pagiPosition"></div>
+                <div class="emptySpace35"></div>
+            </div>  
+        </div>
+        <div class="emptySpace50"></div>
+
+{% endblock %}

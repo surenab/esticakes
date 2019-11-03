@@ -1,0 +1,209 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div id="content-block">
+        <!-- HEADER -->
+        {% include "header.html" %}
+        <!-- Services-Page -->
+        <div class="bgImages opacityLayer" style="background-image: url({% static "img/services-bg.jpg" %}); background-position: 50% 50%; background-size: cover" >
+            <div class="container">
+                <div class="cell-view tableCellVH2">
+                    <div class="emptySpace100 emptySpace-md50"></div>
+                    <div class="emptySpace115 emptySpace-md50"></div>
+                    <div class="row">
+                        <!-- Our-Services-Title -->
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <div class="big titleShortcode">
+                                <h3 class="h3">Take A Look At</h3>
+                                <h2 class="h1">Our Services</h2>
+                                <div class="emptySpace5"></div>
+                                <p>We can help you to organize your wedding/birthday/part to be unforgettable!</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="emptySpace50"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bgWhite">
+            <div class="container">
+                <div class="emptySpace-xs60 emptySpace130"></div>
+                <div class="row">
+                    <!-- Services-1 -->
+                    <div class="col-sm-4">
+                        <div class="normall servicesShortcode2">
+                            <a href="{%url 'website:contacts' %}" class="services spin spin2"><img src="{% static "img/service-icon.png" %}" alt=""></a>
+                            <div class="emptySpace20"></div>
+                            <a href="{%url 'website:contacts' %}"><h4 class="h4">Birthday Cakes Baking</h4></a>
+                            <div class="emptySpace15"></div>
+                            <p>Any size, any flavour, any look and anything you can imagine We can do it!</p>
+                        </div>
+                    </div>
+                    <!-- Services-2 -->
+                    <div class="col-sm-4">
+                        <div class="emptySpace-xs30"></div>
+                        <div class="normall servicesShortcode2">
+                            <a href="{%url 'website:contacts' %}" class="services2 spin spin2"><img src="{% static "img/service-icon2.png" %}" alt=""></a>
+                            <div class="emptySpace20"></div>
+                            <a href="{%url 'website:contacts' %}"><h4 class="h4">Delivery To Any Point In Cork County</h4></a>
+                            <div class="emptySpace15"></div>
+                            <p>We have very low and flexible delivery prices</p>
+                        </div>
+                    </div>
+                    <!-- Services-3 -->
+                    <div class="col-sm-4">
+                        <div class="emptySpace-xs30"></div>
+                        <div class="normall servicesShortcode2">
+                            <a href="{%url 'website:contacts' %}" class="services2 spin spin2"><img src="{% static "img/service-icon3.png" %}" alt=""></a>
+                            <div class="emptySpace20"></div>
+                            <a href="{%url 'website:contacts' %}"><h4 class="h4">Individual Approach</h4></a>
+                            <div class="emptySpace15"></div>
+                            <p>For our any clients we do very individual approach to make them happy</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="emptySpace-xs0 emptySpace45"></div>
+                <div class="row">
+                    <!-- Services-7 -->
+                    <div class="col-sm-4">
+                        <div class="emptySpace-xs30"></div>
+                        <div class="normall servicesShortcode2">
+                            <a href="{%url 'website:contacts' %}" class="services spin spin2"><img src="{% static "img/service-icon7.png" %}" alt=""></a>
+                            <div class="emptySpace15"></div>
+                            <a href="{%url 'website:contacts' %}"><h4 class="h4">Menu Planners</h4></a>
+                            <div class="emptySpace15"></div>
+                            <p>We can plan your party menu</p>
+                        </div>
+                    </div>
+                    <!-- Services-4 -->
+                    <div class="col-sm-4">
+                        <div class="emptySpace-xs30"></div>
+                        <div class="normall servicesShortcode2">
+                            <a href="{%url 'website:contacts' %}" class="services spin spin2"><img src="{% static "img/service-icon4.png" %}" alt=""></a>
+                            <div class="emptySpace15"></div>
+                            <a href="{%url 'website:contacts' %}"><h4 class="h4">Delicious Desserts</h4></a>
+                            <div class="emptySpace15"></div>
+                            <p>Few hounded type of our dessert will make you choose of them in any case </p>
+                        </div>
+                    </div>
+                    <!-- Services-9 -->
+                    <div class="col-sm-4">
+                        <div class="emptySpace-xs30"></div>
+                        <div class="normall servicesShortcode2">
+                            <a href="{%url 'website:contacts' %}" class="services spin spin2"><img src="{% static "img/service-icon9.png" %}" alt=""></a>
+                            <div class="emptySpace15"></div>
+                            <a href="{%url 'website:contacts' %}"><h4 class="h4">Individual Courses</h4></a>
+                            <div class="emptySpace15"></div>
+                            <p>Soon we will start courses to share our technique </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="emptySpace-xs60 emptySpace120"></div>    
+            </div>
+        </div>
+        
+        <!-- Best-Offers -->
+        <div class="bgImages opacityLayer" style="background-image: url({% static "img/offers-bg.jpg" %}); background-position: 50% 50%; background-size: cover">
+            <div class="container">
+                <div class="row">
+                   <div class="emptySpace-xs30 emptySpace120"></div>
+                   <!-- Best-Offers-Title -->
+                   <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                        <div class="big titleShortcode">
+                            <h5 class="h5">Check Out</h5>
+                            <div class="emptySpace20 emptySpace-xs5"></div>
+                            <h2 class="h2 bottomLine">Our Best Offers</h2>
+                            <div class="emptySpace30"></div>
+                            <p>Here are our best offers for you. </p>
+                        </div>   
+                   </div>
+                </div>
+                <div class="emptySpace85 emptySpace-xs60"></div>
+                <div class="row">
+                    <div class="swiper-container" data-breakpoints="1" data-xs-slides="1" data-sm-slides="2" data-md-slides="3" data-slides-per-view="3" data-space="30">
+                        <div class="swiper-wrapper">
+                            <!-- Slide-1 -->
+                            <div class="swiper-slide">
+                                <div class="flexWrapper">
+                                    <div class="normall whiteWrapper">
+                                        <div class="emptySpace50"></div>
+                                        <a href="{%url 'website:contacts' %}"><h4 class="h4">Wedding Cake Baking</h4></a>
+                                        <div class="emptySpace15"></div>
+                                        <p>Our designers will choose best design for you.</p>
+                                        <div class="emptySpace20"></div>
+                                        <a class="imgLayer" href="{%url 'website:contacts' %}"><img class="imgShortcode" src="{% static "img/offer-image.jpg" %}" alt=""><span></span><span></span></a>
+                                        <div class="emptySpace5"></div>
+                                        <div class="bottomWhiteWrapper">
+                                            <p>Any shape,Any Size,Any tiers and look,Any taste. Everything for you.</p>
+                                            <div class="emptySpace10"></div>
+                                            <a class="sweetPrice3 spin spin2" href="{%url 'website:contacts' %}">€99.99</a>
+                                            <div class="emptySpace45"></div>  
+                                        </div>
+                                    </div>   
+                                </div>
+                            </div>
+                            <!-- Slide-2 -->
+                            <div class="swiper-slide">
+                               <div class="flexWrapper">
+                                    <div class="normall whiteWrapper">
+                                        <div class="emptySpace50"></div>
+                                        <a href="{%url 'website:contacts' %}"><h4 class="h4">Chef’s Service</h4></a>
+                                        <div class="emptySpace15"></div>
+                                        <p>We will help you choose what you want foor your party.</p>
+                                        <div class="emptySpace20"></div>
+                                        <a class="imgLayer" href="{%url 'website:contacts' %}"><img class="imgShortcode" src="{% static "img/offer-image2.jpg" %}" alt=""><span></span><span></span></a>
+                                        <div class="emptySpace5"></div>
+                                        <div class="bottomWhiteWrapper">
+                                             <p class="normall desShortcode">We will be happy to think how to make your part individual.</p>
+                                            <div class="emptySpace10"></div>
+                                            <a class="sweetPrice3 spin spin2" href="{%url 'website:contacts' %}">€60.00</a>
+                                            <div class="emptySpace45"></div>
+                                        </div>
+                                    </div> 
+                                </div>       
+                            </div>
+                            <!-- Slide-3 -->
+                            <div class="swiper-slide">
+                                <div class="flexWrapper">
+                                    <div class="normall whiteWrapper">
+                                        <div class="emptySpace50"></div>
+                                        <a href="{%url 'website:contacts' %}"><h4 class="h4">Exclusive Birthday Cakes</h4></a>
+                                        <div class="emptySpace15"></div>
+                                        <p>Birthday cakes our most enjoayble work for you.</p>
+                                        <div class="emptySpace20"></div>
+                                        <a class="imgLayer" href="{%url 'website:contacts' %}"><img class="imgShortcode" src="{% static "img/offer-image3.jpg" %}" alt=""><span></span><span></span></a>
+                                        <div class="emptySpace5"></div>
+                                        <div class="bottomWhiteWrapper">
+                                            <p>Any shape,Any Size,Any tiers and look,Any taste. Everything for you.</p>
+                                            <div class="emptySpace10"></div>
+                                            <a class="sweetPrice3 spin spin2" href="{%url 'website:contacts' %}">€45.00</a>
+                                            <div class="emptySpace45"></div>
+                                        </div> 
+                                    </div> 
+                                </div> 
+                            </div>
+                        </div>
+                        <div class="swiper-pagination relative-pagination swiper-pagination-white pagiPosition2"></div>
+                        <div class="arrowWrapper">
+                            <div class="swiper-button-prev hidden-xs hidden-sm spin spin2">
+                                <img class="arrowShortcode" src="{% static "img/left-hover-arrow.png" %}" alt="">
+                            </div>
+                            <div class="swiper-button-next hidden-xs hidden-sm spin spin2">
+                                <img class="arrowShortcode" src="{% static "img/right-hover-arrow.png" %}" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="emptySpace45 emptySpace-xs30"></div>
+            </div>  
+        </div>
+        <div class="emptySpace-xs60 emptySpace120"></div>
+        
+        <!-- Our-Skills -->
+        <div class="emptySpace-xs60 emptySpace120"></div>
+        
+        <div class="footerSeparator"></div>
+        <div class="emptySpace50 emptySpace-xs30"></div>
+
+{% endblock %}
+

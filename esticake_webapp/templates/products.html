@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+ <div id="content-block">
+        <!-- HEADER -->
+        {% include "header.html" %}
+       	<!-- Our-Product-Page -->
+        <div class="bgImages opacityLayer" style="background-image: url({% static "img/products-bg.jpg" %}" %}); background-position: 50% 50%; background-size: cover">
+            <div class="container">
+                <div class="cell-view tableCellVH2">
+                    <div class="emptySpace100 emptySpace-md50"></div>
+                    <div class="emptySpace115 emptySpace-md50"></div>
+                    <div class="row">
+                        <!-- Our-Prodicts-Title -->
+                        <div class="col-sm-8 col-sm-offset-2">
+                            <div class="big titleShortcode">
+                                <h3 class="h3">Sweet And Delicious</h3>
+                                <h2 class="h1">Our Products</h2>
+                                <div class="emptySpace5"></div>
+                                <p>I am very proud to introduce our team results! </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="emptySpace50"></div>
+                </div>
+            </div>
+        </div>
+        <div class="bgWhite">
+            <div class="container">
+               <div class="emptySpace-xs60 emptySpace120"></div>
+                <div class="row">
+                    <!-- Sweet-Product-Title -->
+                    <div class="col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+                        <div class="big titleShortcode">
+                            <h5 class="h5">Pick The Goodies Fromt</h5>
+                            <div class="emptySpace20 emptySpace-xs5"></div>
+                            <h2 class="h2 bottomLine">Our Sweet Product Selection</h2>
+                            <div class="emptySpace30"></div>
+                            <p>Introducing our cakes, desserts, cookies, cheesecakes, muffins and etc...</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="emptySpace75 emptySpace-xs30"></div>
+                <div class="row">
+                    <!-- Filter-Buttons -->
+                    <div class="col-sm-8 col-sm-offset-2">
+                        <div class="big filterShortcode button-group filters-button-group">
+                            <div class="filterBtn is-checked" data-filter="*">All</div>
+                            <div class="filterBtn" data-filter=".Muffins">Muffins</div>
+                            <div class="filterBtn" data-filter=".Fondant_Cakes">Fondant Cakes</div>
+                            <div class="filterBtn" data-filter=".Cookies">Cookies</div>
+                            <div class="filterBtn" data-filter=".Cakes">Cakes</div>
+                            <div class="filterBtn" data-filter=".Desserts">Desserts</div>
+                       </div>
+                    </div>
+                </div>
+                <div class="emptySpace70 emptySpace-xs30"></div>
+                <div class="grid">
+                    <div class="row">
+                        {% for cake in cake_list %}
+                            <div class="col-sm-6 col-md-4 col-lg-3 element-item {{cake.category}}">
+                            <div class="normall contentShortcode">
+                                <a href="{% url "website:cake" pk=cake.id %}"><h4 class="h4">{{cake.name}}</h4></a>
+                                <div class="emptySpace-xs15 emptySpace25"></div>
+                                <a class="imgLayer" href="{% url "website:cake" pk=cake.id %}"><img class="imgShortcode" src="{{cake.image1.url}}" alt="" style="height:270px;"><span></span><span></span></a>
+                                <div class="emptySpace5"></div>
+                                <p>{{cake.description}}</p>
+                                <div class="emptySpace-xs15 emptySpace20"></div>
+                                <div class="sweetPrice">€{{cake.price}}</div>
+                                <div class="emptySpace-xs30 emptySpace45"></div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>    
+        </div>
+        <div class="emptySpace130 emptySpace-xs40"></div>
+        
+        <div class="footerSeparator"></div>
+        <div class="emptySpace50 emptySpace-xs30"></div>
+       
+
+{% endblock %}
+
+        

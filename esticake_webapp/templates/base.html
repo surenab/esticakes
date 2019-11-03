@@ -1,0 +1,120 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no, minimal-ui" />
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noticia+Text:400,700|Philosopher:400,700|Berkshire+Swash " rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/swiper.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/font-awesome.min.css" %}" rel="stylesheet" type="text/css" />
+    <link href="{% static "css/style.css" %}" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="{% static "img/favicon.ico" %}" />
+    <title>Esti cakes</title>
+</head>
+
+<body>
+    <!-- LOADER -->
+    <div id="loader-wrapper">
+        <div class="loaderShortcode loaderShapeRight"></div>
+        <div class="loaderShortcode loaderShapeLeft"></div>
+        <div class="loaderShortcode loaderLogo"></div>
+    </div>
+    
+    {% block content %}
+    {% endblock %}
+            <!-- FOOTER -->
+        <footer>
+            <div class="bgWhite">
+               <div class="container">
+                    <!-- Contacts -->
+                    <h4 class="h4 contentShortcode">
+                        <a class="phone" href="tel:+353833932141">Call Us Today: <span>+353 83 3932141</span></a>
+                    </h4>
+                    <div class="emptySpace55 emptySpace-xs20"></div>
+                    <!-- Social -->
+                    <div class="contentShortcode">
+                        <h4 class="h4 follow">Follow us</h4>
+                        <a class="social footerSocilaBg fb spin spin2" href="https://www.facebook.com/" target="_blank">
+                        	<i class="fa fa-facebook footerSocial footerF"></i>
+                        </a>
+                        <a class="social footerSocilaBg tw spin spin2" href="https://twitter.com" target="_blank">
+                        	<i class="fa fa-twitter footerSocial footerTw"></i>
+                        </a>
+                        <a class="social footerSocilaBg gl spin spin2" href="https://plus.google.com/" target="_blank">
+                        	<i class="fa fa-google-plus footerSocial footerGl"></i>
+                        </a>
+                        <a class="social footerSocilaBg pi spin spin2" href="https://www.pinterest.com/" target="_blank">
+                        	<i class="fa fa-pinterest-p footerSocial footerPi"></i>
+                        </a>
+                        <a class="social footerSocilaBg in spin spin2" href="https://www.linkedin.com/" target="_blank">
+                        	<i class="fa fa-linkedin footerSocial footerIn"></i>
+                        </a>
+                    </div>
+                    <div class="emptySpace45 emptySpace-xs20"></div>
+                    <!-- Instagram -->
+                    <h4 class="h4 contentShortcode">
+                        <a class="inst" href="https://www.instagram.com" target="_blank">Join us on instagram: <span>#esticakes</span></a>
+                    </h4>
+                    <div class="emptySpace25"></div>
+                    <!-- Instagram-Images -->
+                    <div class="instagram">
+                        <a class="imgLayer" href="https://www.instagram.com" target="_blank"><img src="{% static "img/insta-image1.jpg" %}" alt=""><span></span><span></span></a>
+                        <a class="imgLayer" href="https://www.instagram.com" target="_blank"><img src="{% static "img/insta-image2.jpg" %}" alt=""><span></span><span></span></a>
+                        <a class="imgLayer" href="https://www.instagram.com" target="_blank"><img src="{% static "img/insta-image3.jpg" %}" alt=""><span></span><span></span></a>
+                        <a class="imgLayer" href="https://www.instagram.com" target="_blank"><img src="{% static "img/insta-image4.jpg" %}" alt=""><span></span><span></span></a>
+                        <a class="imgLayer" href="https://www.instagram.com" target="_blank"><img src="{% static "img/insta-image5.jpg" %}" alt=""><span></span><span></span></a>
+                        <a class="imgLayer" href="https://www.instagram.com" target="_blank"><img src="{% static "img/insta-image6.jpg" %}" alt=""><span></span><span></span></a>
+                        <a class="imgLayer" href="https://www.instagram.com" target="_blank"><img src="{% static "img/insta-image7.jpg" %}" alt=""><span></span><span></span></a>
+                        <a class="imgLayer" href="https://www.instagram.com" target="_blank"><img src="{% static "img/insta-image8.jpg" %}" alt=""><span></span><span></span></a>
+                    </div>
+                    <div class="emptySpace55 emptySpace-xs20"></div>
+                    <!-- Copy -->
+                    <div class="copy">
+                        <p>© Esti Cakes. All rights reserved.</p>
+                    </div>
+               </div>
+            </div>
+        </footer>
+        <div class="emptySpace60"></div>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup-wrapper">
+        <div class="bg-layer"></div>
+        <div class="popup-content" data-rel="1">
+            <div class="layer-close"></div>
+            <div class="popup-container size-1">
+               <div class="embed-responsive embed-responsive-16by9">
+
+               </div>
+               <div class="button-close"> <span></span><span></span></div>
+            </div>
+        </div>
+        <!-- Search-Popup -->
+        <div class="popup-content" data-rel="2">
+            <div class="layer-close"></div>
+            <div class="popup-container size-1">
+               <form>
+                   <input class="popupSearch" type="search" placeholder="Search">
+                   <input class="searchicon" type="submit">
+               </form>
+                <i class="fa fa-search searchPopUpIcon"></i>
+               <div class="button-close"> <span></span><span></span></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="{% static "js/swiper.jquery.min.js" %}"></script>
+    <script src="https://npmcdn.com/isotope-layout@3.0/dist/isotope.pkgd.min.js"></script>
+    <script src="{% static "js/jquery.circliful.min.js" %}"></script>
+    <script src="{% static "js/global.js" %}"></script>
+
+</body>
+
+</html>

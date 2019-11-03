@@ -1,0 +1,52 @@
+{% load static %}
+<header>
+           <div class="container">
+                <div class="row">
+                    <a class="logo" href="{%url 'website:index' %}"><img src="{% static "img/logo.png" %}" alt=""></a>
+                    <div class="mobileWrapper">
+                        <div class="headerLikeWrapper">
+                            <div class="headerLike">
+								<i class="fa fa-heart-o likeHear"></i>
+								<!-- HeaderSocial -->
+								<div class="headerSocialWrapper">
+									<a class="headerSocial  spin spin2" href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook headerSocialIcon headerF"></i></a>
+									<div class="emptySpace5"></div>
+									<a class="headerSocial spin spin2" href="https://twitter.com" target="_blank"><i class="fa fa-twitter headerSocialIcon headerTw"></i></a>
+									<div class="emptySpace5"></div>
+									<a class="headerSocial spin spin2" href="https://plus.google.com" target="_blank"><i class="fa fa-google-plus headerSocialIcon headerGl"></i></a>
+									<div class="emptySpace5"></div>
+									<a class="headerSocial spin spin2" href="https://pinterest.com" target="_blank"> <i class="fa fa-pinterest-p headerSocialIcon headerPi"></i></a>
+									<div class="emptySpace5"></div>
+									<a class="headerSocial spin spin2" href="https://www.linkedin.com/" target="_blank"> <i class="fa fa-linkedin headerSocialIcon headerIn"></i></a>
+								</div>
+                        	</div>
+                        </div>
+                        <div class="headerScearch open-popup" data-rel="2">
+                        	<i class="fa fa-search headerSearchIcon"></i>
+                        </div>
+                        <nav>
+                            <ul class="leftMenu">
+                                <li><a class="headerActive" href="{%url 'website:index' %}">Home</a></li>
+                                <li><a href="{%url 'website:about' %}">About</a></li>
+                                <li>
+                                	<a href="{%url 'website:products' %}">Products</a>
+                                </li>
+                            </ul>
+                            <ul class="RightMenu">
+                                <li><a href="{%url 'website:services' %}">Services</a></li>
+                                <li>
+                                	<a href="{%url 'website:blog' %}">Blog</a>
+                                </li>
+                                <li><a href="{%url 'website:contacts' %}">Contacts</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="menuIcon">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+           </div>
+        </header>
